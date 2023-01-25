@@ -24,8 +24,8 @@ export class HeaderComponent {
       this.themeSubject.next(Boolean(theme));
       this.darkMode = Boolean(theme);
       this.setBackground();
-    } else {
-      this.setTheme(Boolean(theme))
+    } else {      
+      this.setBackground();
     }
   }
   
