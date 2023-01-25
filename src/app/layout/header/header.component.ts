@@ -20,7 +20,7 @@ export class HeaderComponent {
     private router: Router,
     private renderer: Renderer2) {
     const theme = localStorage.getItem('theme');
-    if (theme) {      
+    if (theme === 'true') {      
       this.themeSubject.next(Boolean(theme));
       this.darkMode = Boolean(theme);
       this.setBackground();
